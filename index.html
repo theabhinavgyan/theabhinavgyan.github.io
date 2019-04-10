@@ -1,862 +1,740 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html />
+<html lang="en-US">
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123719673-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-123719673-1');
+    </script>
+
 
     <title>Abhinav Gyan</title>
-    <link rel="shortcut icon" type="image/png" href="img/lo.png">
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Twitter Card-->
+    <meta name="twitter:title" content="⚡️BOLAJI AYODEJI⚡️️">
+    <meta name="twitter:site" content="@iambolajiayo" />
+    <meta name="twitter:creator" content="@iambolajiayo" />
+    <meta name="twitter:description" content="I build and deploy software applications with great focus on stunning interface design, optimization and security.">
+    <meta name="twitter:image" content="images/bolaji.jpg">
+    <meta name="twitter:card" content="images/bolaji.jpg">
+    <meta name="description" content="I build and deploy software applications with great focus on stunning interface design, optimization and security.">
+    <meta name="keywords" content="Bolaji Ayodeji, Bolaji, Ayodeji, Front-end Developer, Freelancer, Web Developer, Web Designer, Software Developer, Nigerian, Developer, GitHub, OpenSource" />
+    <!-- Facebook card -->
+    <meta property="fb:admins" content="100018476377896" />
+    <meta property="fb:page_id" content="872194893169133" />
+    <!--Open Graph-->
+    <meta property="og:image" content="images/bolaji.jpg">
+    <meta property="og:title" content="⚡️️BOLAJI AYODEJI⚡️️" />
+    <meta property="og:description" content="I build and deploy software applications with great focus on stunning interface design, optimization and security." />
+    <meta name="author" content="BOLAJI AYODEJI">
+    <meta property="og:url" content="https://bolajiayodeji.com/" />
+    <meta property="og:site_name" content="⚡️️BOLAJI AYODEJI⚡️️" />
+    <meta property="og:type" content="website" />
+
+    <!-- Add to home screen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="⚡️️BOLAJI AYODEJI⚡️️" />
+    <link rel="apple-touch-icon" href="images/icons/icon-152x152.png" />
+    <!-- Windows -->
+    <meta name="msapplication-TileImage" content="/images/icons/icon-144x144.png" />
+    <meta name="msapplication-TileColor" content="#2dce89" />
+
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#2dce89" />
+
+    <!-- Google Knowledge Graph card -->
+    <script type='application/ld+json'>
+        {
+            "@context": "https://www.schema.org",
+            "@type": "Software Developer",
+            "name": "BOLAJI AYODEJI (@iambolajiayo)",
+            "url": "https://bolajiayodeji.com/",
+            "logo": "https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png",
+            "description": "I build and deploy software applications with great focus on stunning interface design, optimization and security."
+        }
+    </script>
+
+    <!--FAVICON-->
+    <link rel="shortcut icon" href="https://res.cloudinary.com/iambeejayayo/image/upload/v1547954566/fav-500.png">
+
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="css/app.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
 
-    <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+<body>
 
-    <!-- Custom styles for this template -->
-    <link href="css/agency.min.css" rel="stylesheet">
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
 
-  </head>
-
-  <body id="page-top">
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Abhinav Gyan</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fa fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav text-uppercase ml-auto">
-          	
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#assa">Experience</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">Education</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Hobbies</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Header -->
-    <header class="masthead">
-      <div class="container">
-        <div class="intro-text">
-          <div class="intro-lead-in">Welcome To My Website!</div>
-          <div class="intro-heading text-uppercase">I'm glad to have you</div>
-          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">More about Me</a>
-        </div>
-      </div>
-    </header>
+    <!-- Your customer chat code -->
+    <div class="fb-customerchat" attribution=setup_tool page_id="179898976244588" theme_color="#2dce89">
+    </div>
+    <!-- End customer chat code-->
 
 
+    <!-- MENU -->
+    <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
+        <div class="container">
 
-    
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="ni-3x ni ni-bullet-list-67"></span>
+                </button>
 
-    <!-- Services -->
-    <section id="services">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">About Me</h2>
-
-            <h3 class="section-subheading text-muted">Ahoy there!! I am <br> a Gryffindor Wizard of House Targaryen, who is SHERlocked, loves to Suit Up <br> and hangout at Central Perk and also, I am the one who knocks.</h3>
-
-          </div>
-        </div>
-        <div class="row text-center">
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading">Indian Institute of Technology, Patna</h4>
-            <p class="text-muted"><b> B. Tech. in Civil and Environmental Engineering </b> </p>
-          </div>
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              
-            </span>
-            <h4 class="service-heading"></h4>
-            <p class="text-muted"><b>  </b> </p>
-          </div>
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-briefcase fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading">Indian Institute of <br>Science, Bengaluru</h4>
-            <p class="text-muted"><b>Summer Research Fellow under <br> the FAST-SF program of IAS.</b></p>
-          </div>
-        </div>
-        <div class="row text-center">
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-birthday-cake fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading">23rd April <br> 1998</h4>
-            <p class="text-muted"><b></b> </p>
-          </div>
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-home fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading">Patna, Bihar<br> India</h4>
-            <p class="text-muted"><b></b> </p>
-          </div>
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading">Gamer | Coder <br> Binge Watcher</h4>
-            <p class="text-muted"><b></b></p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <p class="large text-muted"></p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <p class="large text-muted">Hi there, I am Abhinav Gyan. <br> I am currently junior year student at Indian Institute of Technology Patna, majoring in Civil and Environmental Engineering. I am a bit of explorer who loves photography and is nocturnal and is mostly found with a laptop playing loud EDM. <br> Currently I am doing a research intern at Indian Institute of Science, Bengaluru. To know more about me <a class="portfolio-link" data-toggle="modal" href="#portfolioModal001">CLICK HERE</a> </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="bg-light" id="assa">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">POSITIONS OF RESPONSIBILITY</h2>
-            <h3 class="section-subheading text-muted">I posess good management skills and due to which I have been awarded with the following responsibilities to handle.</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="team-member">
-              <img class="mx-auto rounded-circle" src="img/team/SAAR.jpg" alt="">
-              <h4>General Secretary</h4>
-              <p class="text-muted">Students' Association for Alumni Relations <br> Apr '18 - Present</p>
-              <ul class="list-inline social-buttons">
-                
-                <li class="list-inline-item">
-                  <a href="https://www.fb.com/saar.iitp">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                </li>
-                
-              </ul>
+                <!-- lOGO TEXT HERE -->
+                <a href="index.html" class="navbar-brand hvr-bounce-out"><i class="ni camera-compact"></i> Abhinav
+                    &nbsp;<i class="fa fa-adn"></i></a>
             </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="team-member">
-              <img class="mx-auto rounded-circle" src="img/team/anw.jpg" alt="">
-              <h4>Cultural Coordinator</h4>
-              <p class="text-muted">Anwesha '19 <br>	 Apr '19 - Present</p>
-              <ul class="list-inline social-buttons">
-                
-                <li class="list-inline-item">
-                  <a href="https://www.fb.com/anwesha.iitpatna">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="https://www.linkedin.com/company/anwesha/">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </li>
-                
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="team-member">
-              <img class="mx-auto rounded-circle" src="img/team/iit.jpg" alt="">
-              <h4>Secretary, Welfare</h4>
-              <p class="text-muted">Students' Gymkhana, IIT Patna <br> May '19 - Present</p>
-              <ul class="list-inline social-buttons">
-                
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                </li>
-               
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <p class="large text-muted">I was also an active member of different clubs and fests during my freshmen year and sophomore year. I also worked for the following posts.</p>
-          </div>
-        </div>
-        <div class="row">
-          
-          <div class="col-sm-4">
-            <div class="team-member">
-              <img class="mx-auto rounded-circle" src="img/team/anw.jpg" alt="">
-              <h4>Cultural - Subcoordinator</h4>
-              <p class="text-muted">Anwesha '18</p>
-              <ul class="list-inline social-buttons">
-                
-                <li class="list-inline-item">
-                  <a href="https://www.fb.com/anwesha.iitpatna">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="https://www.linkedin.com/company/anwesha/">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </li>
-                
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="team-member">
-              <img class="mx-auto rounded-circle" src="img/team/iit.jpg" alt="">
-              <h4>Hall Secretary</h4>
-              <p class="text-muted">Students' Gymkhana</p>
-              <ul class="list-inline social-buttons">
-                
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                </li>
-                
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="team-member">
-              <img class="mx-auto rounded-circle" src="img/team/ace.jpg" alt="">
-              <h4>Web Developer</h4>
-              <p class="text-muted">ACE IIT Patna</p>
-              <ul class="list-inline social-buttons">
-                
-                <li class="list-inline-item">
-                  <a href="https://www.facebook.com/ACE.IITP/">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="https://www.linkedin.com/company/ace-iit-patna/">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- About -->
-    <section id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Education</h2>
-            <h3 class="section-subheading text-muted">The following is the list of my alma maters who have made me what I am today. <br> Though the best teacher I have had till now are my parents who have always taught me the right things when I needed them the most.</h3>
-          </div>
+            <!-- MENU LINKS -->
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-nav-first">
+                    <li><a href="index.html" class="smoothScroll"><i class="ni ni-satisfied"></i> Home</a></li>
+                    <li><a href="#about" class="smoothScroll"><i class="ni ni-circle-08"></i> About Me</a></li>
+                    <li><a href="#services" class="smoothScroll"><i class="ni ni-briefcase-24"></i> Responsibilities</a></li>
+                    <li><a href="#portfolio" class="smoothScroll"><i class="ni ni-collection"></i> Involvements</a></li>
+                    <li><a href="https://docs.google.com/document/d/1pSgKk77SJuG7h91MItghEUfX3pW-F1e5ZUBrmynJ_iI/edit?usp=sharing" class="smoothScroll"><i class="ni ni-building"></i> Agendas</a></li> 
+                    <!-- <li><a href="https://bolajiayodeji.com"><i class="ni ni-single-copy-04"></i> Blog</a></li> -->
+                </ul>
+
+            </div>
+
         </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <ul class="timeline">
-              <li>
-                <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/about/sdbs.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4>2001-2008</h4>
-                    <h4 class="subheading">St. Don Bosco School</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">This was not a school for me but a home where I found a family among 20 people! I conntinued in this school till my 4th grade when my father admitted me to my next school. All the foundation of what I am today was laid here only.</p>
-                  </div>
-                </div>
-              </li>
-              <li class="timeline-inverted">
-                <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/about/ijs.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4>2008-2014</h4>
-                    <h4 class="subheading">Infant Jesus' School</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">I was admitted here in 5th grade after an entrance exam. During my 6 years here I made a lot of friends and explored the different fields and bagged many prizes for the school. Then I passed from here after completing my 10th class with a CGPA of 10/10.</p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/about/jagat.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4>2014-2016</h4>
-                    <h4 class="subheading">Jagat Mission Senior Secondary School</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">I spend my last 2 years of schooling life here, where I was simultaneously preparing for JEE too! I also cleared KVPY. Then I got over my scholing after completing 12 class where I got 91.4% marks. </p>
-                  </div>
-                </div>
-              </li>
-              <li class="timeline-inverted">
-                <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/about/iit.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4>2016-Present</h4>
-                    <h4 class="subheading">Indian Institute of Technolgy Patna</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">I secured decent rank in JEE Advance 2016 and then I joined IIT Patna. I have spent more than 2 years here and now this place is my home! I found myself over again in a completely different way here. All the activities taking place here are impoving my skills bit by bit. I hope the coming two years will pass in the same manner.</p>
-                  </div>
-                </div>
-              </li>
-              <li class="timeline-inverted">
-                <div class="timeline-image">
-                  <h4>It Is
-                    <br>Just My
-                    <br>Beginning!</h4>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
     </section>
 
 
-    <!-- Portfolio Grid -->
-    <section class="bg-light" id="portfolio">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Hobbies & Other Activities </h2>
-            <h3 class="section-subheading text-muted">With a little sleep of 6 hours, I have ample time to enjoy my hobbies and follow a bit of my passion.<br> Though I try to complete the responsibilities of my PORs first but I definitely take my time out for these.</h3>
-          </div>
+    <!-- HOME -->
+    <section id="home" data-stellar-background-ratio="0.5">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+
+                <!--COLUMN ONE-->
+                <div class="col-md-6 col-sm-12">
+                    <div class="home-video">
+
+                    </div>
+                </div>
+            </div>
+
+            <!--COLUMN TWO-->
+            <div class="col-md-6 col-sm-12">
+                <div class="home-info">
+
+                    <h1 class="typewrite" data-period="200" data-type='[ "Define", "Dedicate", "Develope", "Envision", "Enpower", "Overcome",  "Welcome to my portfolio", "Enjoy!"]'>
+                        <span class="wrap"></span>
+                    </h1>
+
+                    <a href="#about" style="color:#000" ; class="btn section-btn smoothScroll hvr-icon-down">Know More <i class="fa fa-chevron-circle-down hvr-icon"></i></a>
+                    <a href="https://docs.google.com/document/d/1pSgKk77SJuG7h91MItghEUfX3pW-F1e5ZUBrmynJ_iI/edit?usp=sharing" target="_blank" style="color:#000" ; class="btn section-btn smoothScroll hvr-icon-down"><b>Manifesto</b> <i class="fa fa-chevron-circle-right hvr-icon"></i></a>
+                    <!-- <span>
+                        CALL: +234 8109445504
+                        <small>For any inquiry or questions.</small>
+                    </span> -->
+                </div>
+            </div>
+
+
+
         </div>
-        <div class="row">
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/00drama.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Dramatics</h4>
-              <p class="text-muted"></p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Photography</h4>
-              <p class="text-muted"></p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/00anchor.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Anchoring</h4>
-              <p class="text-muted"></p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/00game.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Gaming</h4>
-              <p class="text-muted"></p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
-             
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/play.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Playing</h4>
-              <p class="text-muted"></p>
-            </div>
-          </div>
-          
         </div>
-      </div>
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about" data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-5 col-sm-6">
+                    <div class="about-info">
+                        <div class="section-title">
+                            <h2>Quick Bio</h2>
+                            <span class="line-bar">...</span>
+                        </div>
+                        <p><i>“The purpose of life is not to be happy. It is to be compassionate, to have it make some difference that you have lived and lived well.”</i></p>
+                        <p>Hello there! I'm Abhinav Gyan. </p>
+                        
+                        <p>I believe that if any of my deeds is making the condition of anyone even a little better then it is worth doing. <br> I am a junior year student pursuing B. Tech. in Civil and Environmental Engineering. 
+                        <p>Being workaholic has helped me achieve a lot in the recent time. It's beacuse of my dedication and will power that I have been able to contribute to the various domains inside the college as well as outside it too. </p> <p>  The journey has beem bittersweet and I hope to continue my good deeds for this institute which is now my home! </p></p><br />
+
+                        <!-- <a class="section-btn hvr-icon-forward" href="assets/resThe journey has beem bittersweet and I hope to continue the goodume.pdf ">Download Resume <i class="fa fa-arrow-right hvr-icon "></i></a> -->
+                        <a href="https://docs.google.com/document/d/1pSgKk77SJuG7h91MItghEUfX3pW-F1e5ZUBrmynJ_iI/edit?usp=sharing" target="_blank" style="color:#000" ; class="btn section-btn smoothScroll hvr-icon-down"><b>Manifesto</b> <i class="fa fa-chevron-circle-right hvr-icon"></i></a>
+
+
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 ">
+                    <div class="about-info skill-thumb ">
+
+                        <h4>Web Design <span class="pull-right"><i class="ni ni-tv-2"></i></span></h4>
+                        <hr>
+
+                        <h4>Photography <span class="pull-right"><i class="ni ni-camera-compact"></i></span></h4>
+                        <hr>
+
+                        <h4>Anchoring <span class="pull-right"><i class="ni ni-single-02"></i></span></h4>
+                        <hr>
+
+                        <h4>Gaming <span class="pull-right"><i class="ni ni-world"></i></span></h4>
+                        <hr>
+
+                        <h4>Dramatics <span class="pull-right"><i class="ni ni-ruler-pencil"></i></span></h4>
+                        <hr>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-12 ">
+                    <div>
+                        <img src="images/anhi.jpg" class="img-responsive center about-image " alt="Bolaji Ayodeji ">
+                        <br /><br /><br /><br /><br /><br /><br /><br />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SERVICES -->
+    <section id="services" data-stellar-background-ratio="0.5 ">
+        <div class="container ">
+            <div class="row ">
+
+                <div class="col-md-12 col-sm-12 ">
+                    <div class="section-title ">
+                        <hr />
+                        <br /><br /><br />
+                        <h2>Positions of Responsibilities</h2>
+                        <span class="line-bar ">...</span>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-6 ">
+                    <!-- BLOG THUMB -->
+                    <div class="media blog-thumb ">
+                    <img src="images/serv/saar.jpg " class="img-responsive " alt=" ">
+                        <div class="media-body blog-info ">
+                            
+                            <h3>General Secretary </a></h3>
+                            <p>Being the General Seretary I established SAAR in college as a interface between the alumni and the administration and the students. Now that we are in touch with a fair share of passouts, we have also started recieving donations to ease the load on the admin. Due to my team's efforts SAAR is now a semi self sufficient body and as the leader of this team I feel proud of everyone who is associated with SAAR.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-6 ">
+                    <!-- BLOG THUMB -->
+                    <div class="media blog-thumb ">
+                    <img src="images/serv/iitp.jpg" class="img-responsive " alt=" "></a>
+                        <div class="media-body blog-info ">
+                            
+                            <h3>Students Welafare Secretary </a></h3>
+                            <p>This was my second tenure in the Gymkhana. Using my experience and my vision and as the student representative of my year, I have put forward the agendas and issues of my batchmates before the admininstration and have tried to get a permanent solution to them.  </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-6 ">
+                    <!-- BLOG THUMB -->
+                    <div class="media blog-thumb ">
+                     <img src="images/serv/anw.jpg" class="img-responsive " alt=" "></a>
+                        <div class="media-body blog-info ">
+                           
+                            <h3>Coordinator, Events, Anwesha'19</a></h3>
+                            <p>We all know that the 3 days of Anwesha are the most cherished days in the college. Being the Events Coordinator was a huge task on my shoulders as not only I had to work for events but also I had decided to call the Miss India myself this time. The best part of this all is as a person I learnt to lead my team admist the chaos. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-6 ">
+                    <!-- BLOG THUMB -->
+                    <div class="media blog-thumb ">
+                     <img src="images/serv/iitp.jpg" class="img-responsive " alt=" "></a>
+                        <div class="media-body blog-info ">
+                          
+                            <h3>Hall Secretary Gymkhana</a></h3>
+                            <p>During my second year I was the elected representative of my hall that comprised of B.Tech. 2nd years and M. Tech. seniors. My vision and my will power helped me to take up the issues of my hall in the general gymkhana meetings and my dedicated efforts and regular follow ups facilitated the eradication of some major problems.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-6 ">
+                    <!-- BLOG THUMB -->
+                    <div class="media blog-thumb ">
+                    <img src="images/serv/ace.jpg " class="img-responsive " alt=" "></a>
+                        <div class="media-body blog-info ">
+                            
+                            <h3>Web Developer ACE</a></h3>
+                            <p>I am a self motivated person. This quality helped me during my second year when I myself desgined and developed the ACE's website. To do so I had to learn the various tools of web development and due to my commitment to deliver my promise ACE was able to get its first website.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-6 ">
+                    <!-- BLOG THUMB -->
+                    <div class="media blog-thumb ">
+                    <img src="images/serv/anw.jpg " class="img-responsive " alt=" "></a>
+                        <div class="media-body blog-info ">
+                            
+                            <h3>Cultural Sub-Coordinator Anwesha</a></h3>
+                            <p>Anwesha, the 3 day extravaganza is enjoyed by everyone in this college. Being the subcoordinator my work was to manage the cultural aspects of the fest. But my hunger to work more motivated me to not do a lot more. Including conducting the multicity audition at IIT BHU and also going to various other colleges in Patna.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="col-md-6 col-sm-6 ">
+                    
+                    <div class="media blog-thumb ">
+                        <div class="media-body blog-info ">
+                            <img src="images/serv/blog-image7.png " class="img-responsive " alt=" "></a>
+                            <h3>Digital Marketing</a></h3>
+                            <p>Product/Brand promotion via several social and digital platforms leading to product
+                                boost and customers
+                                acqusition.</p>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- <div class="col-md-6 col-sm-6 ">
+                    
+                    <div class="media blog-thumb ">
+                        <div class="media-body blog-info ">
+                            <img src="images/serv/blog-image8.png " class="img-responsive " alt=" "></a>
+                            <h3>Search Engine Optimization</a></h3>
+                            <p>There's a lot of competition out there, so I ensure to include correct meta tagging &
+                                descriptions, open graphs and provide SEO training and strategy for each of my clients
+                                to ensure continous traffic count..</p>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <div class="col-md-12 ">
+        <div class="container ">
+            <h3 style="text-align: center; "> <i>"	The best way to find yourself is to lose yourself in the service of others."</i></h3> <br />
+            <p style="text-align: center; "> This famous quote by Mahatma Gandhi, who was one true leader, is my motivation to take part in so many different clubs and activities of the college. I have always been enthusiastic to make this place a better place. I want to see IIT Patna standing at par with the older IITs. I know that it will take a lot to transform this dream into reality but I am ready to shed my sweat, blood and tears for my institute. And with your help we can together make this vision come to reality.</p>
+        </div>
+    </div>
+
+
+    <!-- WORK -->
+    <section id="portfolio" data-stellar-background-ratio="0.5 ">
+        <div class="container ">
+            <div class="row ">
+
+                <div class="col-md-12 col-sm-12 ">
+                    <div class="section-title ">
+                        <br /><br /><br />
+                        <hr />
+                        <br /><br /><br />
+                        <h2>Achievements & Involvements</h2>
+                        <span class="line-bar ">...</span>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <!-- WORK THUMB -->
+                    <div class="work-thumb">
+                        <a href="https://chrome.google.com/webstore/detail/inspirenuggets-for-chrome/acnfgdioohhajabdofaadfdhmlkphmlb"
+                            target="_blank" rel="noopener">
+                            <img src="images/work/work-image4.jpg" class="img-responsive" alt="Work">
+
+                            <div class="work-info">
+                                <h3>INTERNSHIP</h3>
+                                <small>Completed my second year research internship at IISc Bengaluru, the most premier institute for research by getting selected throught the prestigious IASc internship programme.</small>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 ">
+                    <!-- WORK THUMB -->
+                    <div class="work-thumb ">
+                        <a href="https://netty-finder.herokuapp.com " target="_blank" rel="noopener">
+                            <img src="images/work/work-image1.jpg " class="img-responsive " alt="Work ">
+
+                            <div class="work-info ">
+                                <h3>INTER IIT CULT MEET</h3>
+                                <small>I have participated in the 1st and 2nd editions of Inter IIT Cultural meets. Being an active member of Yavanika and Pixxel, I participated in a multitude of events in both these meets. </small>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 ">
+                    <!-- WORK THUMB -->
+                    <div class="work-thumb ">
+                        <a href="https://emperorphotoshop.com" target="_blank" rel="noopener">
+                            <img src="images/work/work-image2.jpg" class="img-responsive" alt="Work">
+
+                            <div class="work-info">
+                                <h3>PUBLIC SPEAKER</h3>
+                                <small>A person who can address any size of gathering without any stage fear. Clear thoughts running through my mind help me do this. Anchored in the past edition of Anwesha and during the multicity at IIT BHU. </small>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <!-- WORK THUMB -->
+                    <div class="work-thumb">
+                        <a href="https://inside-ful.com.ng" target="_blank" rel="noopener">
+                            <img src="images/work/work-image3.jpg" class="img-responsive" alt="Work">
+
+                            <div class="work-info">
+                                <h3>PHOTOGRAPHY</h3>
+                                <small> I am the winner of the institute photography competition for two consecutive years. Not only this I have covered a number of college events including the Chinese delegates that visited us. </small>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 ">
+                    <!-- WORK THUMB -->
+                    <div class="work-thumb ">
+                                            </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 ">
+                    <!-- WORK THUMB -->
+                    <div class="work-thumb ">
+                        <a href="https://netty-finder.herokuapp.com " target="_blank" rel="noopener">
+                            <img src="images/work/yava.jpg " class="img-responsive " alt="Work ">
+
+                            <div class="work-info ">
+                                <h3>DRAMARICS ENTHUSIAST</h3>
+                                <small>I have been the part of Yavanika, the dramatics society of IIT Patna. I have participated in a number of events and represented IIT Patna at various places. </small>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 ">
+                    <!-- WORK THUMB -->
+                    <div class="work-thumb ">
+                        <a href="https://netty-finder.herokuapp.com " target="_blank" rel="noopener">
+                            <img src="images/work/ecell.jpg " class="img-responsive " alt="Work ">
+
+                            <div class="work-info ">
+                                <h3>E CELL</h3>
+                                <small>I was the part of the then E-club and had organised a couple of events during the E-Week 2017. </small>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div class="container">
+                    <div class "row">
+                        <div style="text-align: center;" class="col-lg-12">
+                            </h2>
+                            <h2>
+                                <a href="#" rel="noopener" class="link-btn hvr-icon-forward"
+                                    rel="noopener">These are my small steps for IIT Patna </a>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
     </section>
 
     
-    
 
-    <!-- Clients -->
-    <section class="py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/envato.jpg" alt="">
-            </a>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/designmodo.jpg" alt="">
-            </a>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/themeforest.jpg" alt="">
-            </a>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/creative-market.jpg" alt="">
-            </a>
-          </div>
+    <!-- TESTIMONIAL-->
+    <!--<section id="testimonial" data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-12 col-sm-12">
+                    <div class="section-title">
+                        <br /><br /><br />
+                        <hr />
+                        <br /><br /><br />
+                        <h2>My Testimonials</h2>
+                        <span class="line-bar">...</span>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="quote"><i class="fa fa-quote-left fa-4x"></i></div>
+                            <div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="10000">
+                                
+                                <ol class="carousel-indicators">
+                                    <li data-target="#fade-quote-carousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#fade-quote-carousel" data-slide-to="1"></li>
+                                    <li data-target="#fade-quote-carousel" data-slide-to="2"></li>
+                                    <li data-target="#fade-quote-carousel" data-slide-to="3"></li>
+                                    <li data-target="#fade-quote-carousel" data-slide-to="4"></li>
+                                </ol>
+                                
+                                <div class="carousel-inner">
+                                    <div class="item">
+                                        <img class="profile-circle" src="images/testi/seun.jpg" alt="Seun">
+                                        <blockquote>
+                                            <p> Bolaji is a great guy, He understands what a business needs to scale and uses the best approaches to develop brilliant digital products. If you want to scale your product via the Digital space, you should contact him immediately.</p>
+                                            <h3>Seun Daramola | <span class="testi">Software Developer</span> <a href="https://andela.com"
+                                                    target="_blank" rel="noopener">@Andela</a></h3>
+                                        </blockquote>
+                                    </div>
+                                    <div class="active item">
+                                        <img class="profile-circle" src="images/testi/samson.jpg" alt="Samson">
+                                        <blockquote>
+                                            <p>Bolaji is a dedicated developer, always eager to find and fix problems.
+                                                <br /> He is one of the most active contributors to Open Source
+                                                Community Africa, a project that promotes the use of open source
+                                                project in Africa. <br /> I find it easy working with him and I will
+                                                highly
+                                                recommend him on his expertise. </p>
+                                            <h3>Samson Goddy | <span class="testi">Co-Founder</span> <a href="https://oscafrica.org"
+                                                    target="_blank" rel="noopener">@OSCA</a></h3>
+                                        </blockquote>
+                                    </div>
+                                    <div class="item">
+                                        <img class="profile-circle" src="images/testi/lekan.jpg" alt="Lekan">
+                                        <blockquote>
+                                            <p>I've known Bolaji for some years now, He's not only concerned about
+                                                building the technical aspect of your product, but also helping you
+                                                scale up your business, this is some great quality most developers out
+                                                there lack. You should try him out, He's an exponent Front-end
+                                                Developer
+                                            </p>
+                                            <h3>Ibrahim Olamilekan | <span class="testi">Software Developer</span> <a
+                                                    href="https://andela.com" target="_blank" rel="noopener">@Andela</a></h3>
+                                        </blockquote>
+                                    </div>
+                                    <div class="item">
+                                        <img class="profile-circle" src="images/testi/damian.jpg" alt="Damian">
+                                        <blockquote>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem,
+                                                veritatis nulla eum laudantium totam tempore optio doloremque
+                                                laboriosam quas, quos eaque molestias odio aut eius animi.</p>
+                                            <h3>Damian Ashinjo | <span class="testi">CEO</span> <a href="https://youthsundefined.org"
+                                                    target="_blank" rel="noopener">@YouthsUndefined</a></h3>
+                                        </blockquote>
+                                    </div>
+                                    <div class="item">
+                                        <img class="profile-circle" src="images/testi/sharon.jpg" alt="Sharon">
+                                        <blockquote>
+                                            <p>Bolaji is a determined young man and I completely trust his expertise on
+                                                building software's, developing and designing brilliant innovations.
+                                                <br /> He responds quickly to problems and prefers long lasting
+                                                solutions.</p>
+                                            <h3>Sharon Ngunan | <span class="testi">CEO</span> <a href="https://www.facebook.com/Fairy-Dust-Studio-1980424062254614/"
+                                                    target="_blank" rel="noopener">@FairyDust Studio</a></h3>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+        </div>
+    </section> 
+
+-->
+
+    <!-- CONTACT -->
+    <section id="contact" data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-12 col-sm-12">
+                    <div class="section-title">
+                        <br /><br /><br /><br />
+                        <h2>Contact me</h2>
+                        <span class="line-bar">...</span>
+                    </div>
+                </div>
+
+                <div class="col-md-8 col-sm-8">
+
+                    
+
+                <!--- SOCIAL ICONS -->
+
+                <div class="col-md-12 col-sm-12">
+                    <div class="container">
+                        <div class="row">
+                            <br /><br /><br /><br />
+                            <ul style="text-align: center;">
+                                <li style="display: inline-block; list-style: none; margin-right: 30px;">
+                                    <a href="tel:7250925416" class="fa fa-phone fa-3x"></a>
+                                </li>
+                                <li style="display: inline-block; list-style: none; margin-right: 30px;">
+                                    <a href="mailto:agyan.ce16@iitp.ac.in" class="fa fa-envelope fa-3x"></a>
+                                </li>
+                                <li style="display: inline-block; list-style: none; margin-right: 30px;">
+                                    <a href="https://facebook.com/theabhinavgyan" class="fa fa-facebook-square fa-3x"
+                                        attr="facebook icon"></a>
+                                </li>
+                                <li style="display: inline-block; list-style: none; margin-right: 30px;">
+                                    <a href="https://twitter.com/theabhinavgyan" class="fa fa-twitter fa-3x"></a>
+                                </li>
+                                <li style="display: inline-block; list-style: none; margin-right: 30px;">
+                                    <a href="https://instagram.com/theabhinavgyan" class="fa fa-instagram fa-3x"></a>
+                                </li>
+                                <li style="display: inline-block; list-style: none; margin-right: 30px;">
+                                    <a href="https://linkedin/in/theabhinavgyan" class="fa fa-linkedin fa-3x"></a>
+                                </li>
+                                
+                                <li style="display: inline-block; list-style: none; margin-right: 30px;">
+                                    <a href="https://github.com/theabhinavgyan" class="fa fa-github fa-3x"></a>
+                                </li>
+                                <li style="display: inline-block; list-style: none; margin-right: 30px;">
+                                    <a href="https://www.youtube.com/channel/UCLrinQ8egN8l06Fa4ZdlvTQ" class="fa fa-youtube fa-3x"></a>
+                                </li>
+                                
+                                
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Contact Us</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <form id="contactForm" name="sentMessage" novalidate>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <input class="form-control" id="name" type="text" placeholder="Your Name *" required data-validation-required-message="Please enter your name.">
-                    <p class="help-block text-danger"></p>
-                  </div>
-                  <div class="form-group">
-                    <input class="form-control" id="email" type="email" placeholder="Your Email *" required data-validation-required-message="Please enter your email address.">
-                    <p class="help-block text-danger"></p>
-                  </div>
-                  <div class="form-group">
-                    <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" required data-validation-required-message="Please enter your phone number.">
-                    <p class="help-block text-danger"></p>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <textarea class="form-control" id="message" placeholder="Your Message *" required data-validation-required-message="Please enter a message."></textarea>
-                    <p class="help-block text-danger"></p>
-                  </div>
-                </div>
-                <div class="clearfix"></div>
-                <div class="col-lg-12 text-center">
-                  <div id="success"></div>
-                  <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <span class="copyright">Copyright &copy; Your Website 2018</span>
-          </div>
-          <div class="col-md-4">
-            <ul class="list-inline social-buttons">
-              
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-facebook"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-instagram"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-linkedin"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-twitter"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <ul class="list-inline quicklinks">
-              <li class="list-inline-item">
-                <a href="#">Privacy Policy</a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">Terms of Use</a>
-              </li>
-            </ul>
-          </div>
+    <!-- FOOTER -->
+    <footer data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-5 col-sm-12">
+                    <div class="footer-thumb footer-info">
+                        <h3><i>"The future depends on what you do today." </i> </h3>
+                        <p>Do act wise!</p> <br />
+                        <p><i class="fa fa-phone"></i> [+91] 7250925416</p>
+                        <p><i class="fa fa-envelope"></i> agyan.ce16@iitp.ac.in</p>
+                        <p><i class="fa fa-map-marker"></i> C-111, Boys' Hostel</p>
+                       
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-4">
+                    <div class="footer-thumb">
+                        <h2>Quick Links</h2>
+                        <ul class="footer-link">
+                            
+                            <li><a href="#about" class="smoothScroll">About me</a></li>
+                            <li><a href="#portfolio" class="smoothScroll">Achievements</a></li>
+                            <li><a href="#contact" class="smoothScroll">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-4">
+                    <div class="footer-thumb">
+                        
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-12 col-sm-12">
+                    <div class="footer-bottom">
+                        <div class="col-md-6 col-sm-5">
+                            <div class="copyright-text">
+                                <p>Copyright &copy;
+                                    <script>
+                                        document.write(new Date().getFullYear());
+                                    </script>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-7">
+                            <div class="phone-contact">
+                                <p><i class="fa fa-code"></i> with <i class="text-danger fa fa-heart"></i> &amp; <i
+                                        class="text-warning fa fa-coffee"></i> by; Abhinav Gyan</p>
+                            </div>
+                            <ul class="social-icon">
+                                <li>
+                                    <a href="https://facebook.com/theabhinavgyan" class="fa fa-facebook-square" attr="facebook icon"></a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/theabhinavgyan" class="fa fa-twitter"></a>
+                                </li>
+                                <li>
+                                    <a href="https://instagram.com/theabhinavgyan" class="fa fa-instagram"></a>
+                                </li>
+                                <li>
+                                    <a href="https://linkedin/in/theabhinavgyan" class="fa fa-linkedin"></a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/theabhinavgyan" class="fa fa-github"></a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
-      </div>
     </footer>
 
-    <!-- Portfolio Modals -->
+    <!-- SCROLL TO TOP
+    <a style="text-decoration: none" class="scroll-to-top smoothScroll" href="#home">
+        <i class="fa fa-arrow-up"></i></a> -->
 
-    <!-- Modal 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Dramatics</h2>
-                  <p class="item-intro text-muted"></p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/drama.jpg" alt="">
-                  <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/Bdn6tR1BaXc/" data-instgrm-version="8" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:700px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/Bdn6tR1BaXc/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">Zameen battey firtey ho, ab kya aasmaan baatogey?! Insaan toh alag kr diye ab kya parindey chaatogey?!! #AllAboutThatPlay #BeingAtheist 😜 #InterIITCultMeet #EkDoTeenChaarIITPKiJayJayKaar #CultWaaleyHainMazaakThodeHai</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by <a href="https://www.instagram.com/theabhinavgyan/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank"> ABHINAV GYAN</a> (@theabhinavgyan) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2018-01-06T21:50:03+00:00">Jan 6, 2018 at 1:50pm PST</time></p></div></blockquote> <script async defer src="https://www.instagram.com/embed.js"></script>
+    <!-- SCRIPTS -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-                  
-                 
-                  
-                  <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftheabhinavgyan%2Fposts%2F2009179202666591&width=700&show_text=true&height=665&appId" width="700" height="665" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/app.min.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(function () {
+                        console.log("Service Worker Registered");
+                    });
+            });
+        }
+    </script>
 
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Threads</li>
-                    <li>Category: Illustration</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 2 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">PHOTOGRAPHY</h2>
-                  <p class="item-intro text-muted"></p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/photo.jpg" alt="">
-                  <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftheabhinavgyan%2Fposts%2F2039452546305923&width=700&show_text=true&height=664&appId" width="700" height="664" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-
-                  <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BXdhXBShw3D/" data-instgrm-version="8" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:700px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:32.22222222222222% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BXdhXBShw3D/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">1st token of appreciation! Foundation Day</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by <a href="https://www.instagram.com/theabhinavgyan/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank"> ABHINAV GYAN</a> (@theabhinavgyan) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-08-06T17:47:47+00:00">Aug 6, 2017 at 10:47am PDT</time></p></div></blockquote> <script async defer src="//www.instagram.com/embed.js"></script>
-
-                  <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fiitp.sociocultural%2Fposts%2F1534309403355864&width=700&show_text=true&height=922&appId" width="700" height="922" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Explore</li>
-                    <li>Category: Graphic Design</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 3 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Anchoring</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Finish</li>
-                    <li>Category: Identity</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 4 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Lines</li>
-                    <li>Category: Branding</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 5 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Southwest</li>
-                    <li>Category: Website Design</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 6 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Window</li>
-                    <li>Category: Photography</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <!-- Intro -->
-    <div class="portfolio-modal modal fade" id="portfolioModal001" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Abhinav Gyan</h2>
-                  <p class="item-intro text-muted">Hello again! <br> Well, you have known me quite a bit. Do go down to know me more!</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/dp1.jpg" alt="">
-
-                  <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftheabhinavgyan%2Fposts%2F1978990589018786%3A0&width=700&show_text=true&height=633&appId" width="700" height="633" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-
-                  <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BahdvmZBZD5/" data-instgrm-version="8" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px auto; max-width:700px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px auto; padding:33.33333333333333% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BahdvmZBZD5/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">&#34;Stars don&#39;t disappear, they keep blazing Even when the night is over That&#39;s how I find the light.&#34; -Stargazing #MandatoryOne #DiwaliVibes #JustToKeepInstaTicking #StupidMe 😜</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by <a href="https://www.instagram.com/theabhinavgyan/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank"> ABHINAV GYAN</a> (@theabhinavgyan) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-10-21T20:07:20+00:00">Oct 21, 2017 at 1:07pm PDT</time></p></div></blockquote> <script async defer src="//www.instagram.com/embed.js"></script>
-
-                  <p class="yellow">...</p>
-                  <p class="yellow">So, I am a normal 20 year old guy who is exploring a lot of different fields to find my passion. I am living in Patna, Bihar, India right now. I am introvert by nature but I don't know why people find me extrovert! I am a dog person who is best active at night and can even run up on 4 hours of sleep a day. </p>
-                  <p class="yellow">I had a very happening childhood. Every summers, my cousins used to visit our place and we used to have fun by playing cricket or football and by flying kites. During 3rd grade, one of my cousins open a toy and I got so intrigued by it that from then I still have a habit of trying to open and find what's inside anything I find new. Between my 8th grade and 10th grade, I made a lot of devices at my home using transistors by looking at a circuit book of transistors.</p>
-                   <p class="yellow">Then life happened and all I remember is I was also mugging up formulas and equations to clear JEE. Then after joining IIT, I promised myself that I am going to live my life my way! That's obviously tough, but I try it as far as possible. Now into the third year of my BTech life, I just want a simply-convoulated, peacefully-happening and plainly-crazy.</p>
-
-
-                  <ul class="list-inline" id="yellow">
-                    <li><b>Hobbies :</b> Playing Counter Stike, Cricket and Football, Surfing internet, Travelling and Photography </li>
-                    <li><b>Athelete :</b> Messi (Football), MS Dhoni (Cricket) and Olofmeister (CSGO)</li>
-                    <li><b>Movies :</b> HP and POTC Series, Iron Man, YJHD, Hera Pheri</li>
-                    <li><b>Music :</b> Martin Garrix, Calvin Harris, Coldplay, Chainsmokers, Nucleya and TRAP music</li>
-                    <li><b>TV Series :</b> F.R.I.E.N.D.S., GoT, Sherlock, Breaking Bad, TMKOC </li>
-                    <li><b>Fiction Characters : </b>Jim Moriarty, Severus Snape, Sirius Black, Arya Stark, Cersie Lannister, Chandler Bing</li>
-                    <li><b>Political Views : </b>Dictatorship is better than democracy.</li>
-                    <li><b>Good at : </b>Dictatorship is better than democracy.</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Go Back</button>
-                </div> 
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Contact form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="js/agency.min.js"></script>
-
-  </body>
+</body>
 
 </html>
