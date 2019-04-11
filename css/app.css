@@ -927,7 +927,7 @@ footer span,
         display: block;
         width: 100%;
         padding-right: 0;
-        overflow: hidden;
+        overflow: scroll;
     }
     .media.blog-thumb .media-left {
         height: 250px;
